@@ -1,0 +1,173 @@
+/**
+ * Styling for the coming soon block, as found in the alternating feature layout module.
+ */
+
+.coming-soon .container {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-12) var(--default-padding);
+    gap: var(--spacing-8);
+    max-width: 1320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.coming-soon .scrollpoint {
+    scroll-margin-top: var(--top-height);
+}
+
+.coming-soon.surface-one-bg {
+    background-color: var(--color-bg-surface-1);
+}
+
+.theme-light .coming-soon.blue-bgs {
+    background-color: var(--color-bg-tinted-blue);
+}
+.theme-dark .coming-soon.blue-bgs {
+    background-color: var(--color-secondary-cobalt-100);
+}
+
+.feature-alternating .coming-soon:nth-child(odd) .container,
+.feature-alternating.reversed .coming-soon:nth-child(even) .container {
+    flex-direction: row;
+}
+.feature-alternating .coming-soon:nth-child(even) .container,
+.feature-alternating.reversed .coming-soon:nth-child(odd) .container {
+    flex-direction: row-reverse;
+}
+
+.coming-soon .call-to-action-section {
+    display: block;
+    padding-inline-end: var(--spacing-8);
+}
+.coming-soon .call-to-action-section.submitted {
+    padding-right: 0;
+}
+
+.coming-soon .text-pane {
+    flex-basis: calc(5 / 12 * 100%);
+    word-break: break-word;
+}
+
+.coming-soon .tagline {
+    font: var(--font-copy-allcaps-md);
+    letter-spacing: var(--font-copy-allcaps-sm-spacing);
+    text-transform: uppercase;
+    margin: 0 0 var(--spacing-3);
+}
+.theme-light .coming-soon .tagline {
+    color: var(--color-secondary-cobalt-600);
+}
+.theme-dark .coming-soon .tagline {
+    color: var(--color-secondary-cobalt-700);
+}
+
+.coming-soon .heading {
+    margin: 0 0 var(--spacing-5);
+}
+
+.coming-soon .text-pane .call-to-action-section {
+    margin-top: var(--spacing-8);
+}
+
+.coming-soon .text-pane .call-to-action-section .email-field {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 var(--spacing-5);
+    padding: 10px 12px;
+    gap: 8px;
+    background: var(--color-brand-white);
+    border-radius: 8px;
+    font: var(--font-copy-md);
+}
+.coming-soon .text-pane .call-to-action-section .email-field.invalid {
+    margin-bottom: var(--spacing-3);
+}
+
+.coming-soon .text-pane .call-to-action-section .beta-tester {
+    margin-bottom: var(--spacing-5);
+}
+
+.theme-dark .coming-soon.blue-bgs .text-pane .button.primary-muted {
+    /* Want button to look the same in both light & dark mode, when module has a blue bg colour */
+    background-color: var(--color-primary-black-50); /* Inverse of primary-black-900 in light mode */
+    color: var(--color-grey-1000); /* Inverse of color-grey-50 in light mode */
+}
+
+.coming-soon .text-pane .message-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--spacing-3);
+}
+.coming-soon .text-pane .message-wrapper.invalid {
+    margin-bottom: var(--spacing-5);
+    color: var(--color-system-error);
+}
+.coming-soon .text-pane .message-wrapper.valid {
+    margin-top: var(--spacing-8);
+    color: var(--color-system-success);
+}
+
+.coming-soon .text-pane .message-wrapper .icon-box.error {
+    --icon-size: 16px;
+    margin-top: 2px;
+}
+
+.coming-soon .text-pane .message-wrapper .error-text {
+    font: var(--font-copy-sm);
+}
+
+.coming-soon .text-pane .message-wrapper .thank-you-text {
+    color: var(--color-copy-primary);
+}
+
+.coming-soon .img-box {
+    flex-basis: calc(7 / 12 * 100%);
+}
+.coming-soon .img-box .img {
+    width: 100%;
+    height: 0;
+    background-size: cover;
+    padding-top: calc(3 / 4 * 100%); /* 4:3 aspect ratio */
+}
+
+/* Breakpoint M */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .coming-soon {
+        gap: var(--spacing-7);
+    }
+}
+
+/* Breakpoints M and S */
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+    .coming-soon .text-pane .email-field.invalid {
+        margin-bottom: var(--spacing-2);
+    }
+
+    .coming-soon .text-pane .message-wrapper.valid {
+        flex-direction: column;
+    }
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .coming-soon .container {
+        gap: var(--spacing-9);
+    }
+
+    .coming-soon > * {
+        flex-basis: unset;
+    }
+
+    .feature-alternating .coming-soon:nth-child(odd) .container,
+    .feature-alternating.reversed .coming-soon:nth-child(even) .container,
+    .feature-alternating .coming-soon:nth-child(even) .container,
+    .feature-alternating.reversed .coming-soon:nth-child(odd) .container {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .coming-soon .img-box .img {
+        padding-top: 100%; /* 1:1 aspect ratio */
+    }
+}

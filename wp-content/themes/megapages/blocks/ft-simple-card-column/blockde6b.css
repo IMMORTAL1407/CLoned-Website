@@ -1,0 +1,77 @@
+/**
+ * Styling for the features simple card column module.
+ */
+
+.ft-simple-card-column {
+    margin: var(--spacing-12) auto;
+}
+
+.ft-simple-card-column .texts {
+    grid-column: 2 / -2;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+    text-align: center;
+    margin-bottom: var(--spacing-11);
+}
+
+.ft-simple-card-column .texts .blurb {
+    color: var(--color-copy-secondary);
+}
+
+.ft-simple-card-column .cards {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-8);
+}
+
+.ft-simple-card-column.two .cards {
+    grid-column: 2 / -2;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ft-simple-card-column .supporting-text {
+    grid-column: 1 / -1;
+    font: var(--font-copy-sm);
+    color: var(--color-copy-secondary);
+    padding-top: var(--spacing-7);
+}
+
+.ft-simple-card-column.two .supporting-text {
+    grid-column: 2 / -2;
+}
+
+/* Breakpoints S to L */
+@media screen and (min-width: 0) and (max-width: 1320px) {
+    .ft-simple-card-column.two .cards {
+        grid-column: 1 / -1;
+    }
+
+    .ft-simple-card-column.two .supporting-text {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Breakpoints S and M */
+@media screen and (min-width: 0) and (max-width: 1080px) {
+    .ft-simple-card-column .heading {
+        hyphens: auto;
+        hyphenate-limit-chars: 10 4 4;
+    }
+
+    .ft-simple-card-column .cards {
+        gap: var(--spacing-7);
+    }
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0) and (max-width: 768px) {
+    .ft-simple-card-column .cards .simple-card {
+        grid-column: 1 / -1;
+    }
+
+    .ft-simple-card-column .texts {
+        grid-column: 1 / -1;
+    }
+}

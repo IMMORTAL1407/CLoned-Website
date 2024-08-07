@@ -1,0 +1,92 @@
+/**
+ * Styling for the competitor matrix module.
+ */
+
+.matrix-card {
+    background-color: var(--color-bg-page);
+    border: 1px solid var(--color-grey-150);
+    flex: 1;
+}
+
+.matrix-card .box {
+    padding: var(--spacing-8) var(--spacing-8) var(--spacing-7);
+}
+
+.matrix-card .img-box {
+    margin-bottom: var(--spacing-7);
+    width: var(--spacing-11);
+    height: var(--spacing-11);
+}
+
+.matrix-card .competitor-name {
+    margin-bottom: var(--spacing-8);
+}
+
+.matrix-card .competitor-price {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.matrix-card .competitor-price .price {
+    font: var(--font-data-one);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.matrix-card .competitor-price .price .asterisk {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.matrix-card .competitor-price .per-tb-per-month {
+    font: var(--font-caption-lg);
+    color: var(--color-copy-secondary);
+}
+
+.matrix-card .price-disclaimer {
+    font: var(--font-copy-sm);
+    color: var(--color-copy-secondary);
+    padding: var(--spacing-7) var(--spacing-8) var(--spacing-8);
+}
+
+.matrix-card .encryption-banner {
+    background-color: var(--color-grey-50);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-3);
+    font: var(--font-copy-md-bold);
+    padding: var(--spacing-5) var(--spacing-8);
+}
+
+.matrix-card .encryption-banner .icon-box {
+    flex: none;
+}
+
+/* Breakpoint M */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .matrix-card .competitor-price .price .asterisk {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+/* Breakpoints S and M */
+@media screen and (min-width: 0) and (max-width: 1080px) {
+    .matrix-card .box,
+    .matrix-card .price-disclaimer {
+        padding: var(--spacing-7);
+    }
+
+    .matrix-card .encryption-banner {
+        padding: var(--spacing-5) var(--spacing-7);
+    }
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0) and (max-width: 768px) {
+    .matrix-card .competitor-price .price .asterisk {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}

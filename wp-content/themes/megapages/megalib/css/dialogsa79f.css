@@ -1,0 +1,323 @@
+/**
+ * Styling for dialogs common to all MEGA WP theme projects.
+ */
+
+/* region Modals */
+
+/* region Modal system */
+
+.modal-constrainer {
+    position: fixed;
+    top: var(--wp-admin-bar-height);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 1320px;
+    width: 100%;
+    margin: var(--spacing-14) auto;
+    padding: 0 var(--default-padding);
+    align-content: center;
+    box-sizing: border-box;
+    z-index: 50; /* Above standard overlay */
+}
+
+.modal {
+    all: unset;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .modal-constrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin: var(--spacing-9) 0 0;
+        padding: 0;
+    }
+}
+
+/* endregion */
+
+/* region Baseline modal style */
+
+.m-modal {
+    padding: var(--spacing-10);
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--spacing-5);
+    background-color: var(--color-bg-page);
+    border-radius: 16px;
+}
+
+.m-modal .img-box {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.m-modal .heading {
+    margin-inline-end: 40px; /* Don't overlap close icon button */
+}
+.m-modal .heading:empty {
+    display: none;
+}
+
+.m-modal button.icon-button.close {
+    position: absolute;
+    top: var(--spacing-7);
+    right: var(--spacing-7);
+}
+.direction-rtl .m-modal button.icon-button.close {
+    right: unset;
+    left: var(--spacing-7);
+}
+
+.m-modal .blurb:empty {
+    display: none;
+}
+
+.m-modal .content {
+    margin-top: var(--spacing-5);
+    padding-inline-end: 20px; /* Workaround for scrollbar overlap */
+    overflow-y: auto;
+}
+.m-modal .content:empty {
+    display: none;
+}
+
+.m-modal .buttons {
+    margin-top: var(--spacing-9);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: var(--spacing-5);
+}
+.m-modal .buttons:empty {
+    display: none;
+}
+
+/* Breakpoints M and S */
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+    .m-modal button.icon-button.close {
+        top: var(--spacing-5);
+        right: var(--spacing-5);
+    }
+    .direction-rtl .m-modal button.icon-button.close {
+        right: unset;
+        left: var(--spacing-5);
+    }
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .m-modal {
+        padding: var(--spacing-7);
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+
+    .m-modal .content {
+        margin-top: var(--spacing-3);
+    }
+
+    .m-modal .buttons {
+        margin-top: var(--spacing-7);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .m-modal .buttons button {
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+/* endregion  */
+
+/* endregion */
+
+/* region Mobile */
+
+.mobile-modal {
+    --modal-padding: var(--spacing-7);
+    position: fixed;
+    top: var(--top-height);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    z-index: 10;
+    padding: var(--modal-padding);
+    background: var(--color-bg-page);
+}
+
+/* Breakpoints L and larger */
+@media screen and (min-width: 1080px) {
+    .mobile-modals {
+        display: none;
+    }
+}
+
+/* Breakpoints S - M */
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+    .mobile-modals {
+        all: unset;
+        display: inherit;
+    }
+}
+
+/* endregion */
+
+/* region Generic message dialog */
+
+dialog.generic-msg {
+    grid-column: 4 / -4;
+}
+
+/* Breakpoint M */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    dialog.generic-msg {
+        grid-column: 3 / -3;
+    }
+}
+
+/* endregion */
+
+/* region Cookie Settings dialog */
+
+.modal.cookie-dialog {
+    grid-column: 3 / -3;
+}
+
+.modal.cookie-dialog .cookie-toggles {
+    margin-bottom: var(--spacing-9);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--spacing-7);
+}
+
+.modal.cookie-dialog .cookie-toggles hr {
+    margin: 0;
+    border: 1px solid var(--color-grey-100);
+}
+
+.modal.cookie-dialog .cookie-toggle {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: var(--spacing-7);
+}
+
+.modal.cookie-dialog .cookie-toggle .text-pane {
+    flex-grow: 1;
+}
+
+.modal.cookie-dialog .cookie-toggle .toggle-control {
+    flex: 0 0 auto;
+}
+
+.modal.cookie-dialog .cookie-toggle .heading {
+    font: var(--font-copy-md-bold);
+    margin-bottom: var(--spacing-3);
+}
+
+.modal.cookie-dialog .cookie-links {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-7);
+}
+
+/* Breakpoint M */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .modal.cookie-dialog {
+        grid-column: 2 / -2;
+    }
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .modal.cookie-dialog {
+        grid-column: 1 / -1;
+    }
+}
+
+/* endregion */
+
+/* region Language Switcher Modal */
+
+.language-switcher {
+    grid-column: 2 / -2;
+}
+
+.language-switcher .language-options {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+    column-gap: var(--spacing-8);
+    row-gap: var(--spacing-3);
+    align-content: start;
+}
+
+.language-switcher .language-options .language-option {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-3);
+    padding: var(--spacing-3);
+    border-radius: 4px;
+    color: var(--color-copy-secondary);
+    font: var(--font-copy-md);
+}
+.language-switcher .language-options .language-option:hover:not(:disabled) {
+    background-color: var(--color-bg-surface-1);
+    color: var(--color-copy-primary);
+    cursor: pointer;
+}
+.language-switcher .language-options .language-option.active:not(:disabled) {
+    background-color: var(--color-bg-surface-2);
+    color: var(--color-copy-primary);
+    font: var(--font-copy-md-bold);
+}
+.language-switcher .language-options .language-option:disabled {
+    color: var(--color-link-disabled);
+    cursor: default;
+}
+
+.language-switcher .language-options .language-option .icon {
+    display: none;
+    width: 24px;
+}
+.language-switcher .language-options .language-option.active .icon {
+    display: block;
+}
+
+/* Breakpoint L */
+@media screen and (min-width: 1080px) and (max-width: 1320px) {
+    .language-switcher .language-options {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Breakpoint M */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .language-switcher .language-options {
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .language-switcher .language-options {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* endregion */

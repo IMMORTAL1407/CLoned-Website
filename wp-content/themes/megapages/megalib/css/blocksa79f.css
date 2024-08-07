@@ -1,0 +1,127 @@
+/**
+ * Styling for WordPress blocks common to MEGA themes.
+ */
+
+/* region Horizontal rule */
+
+hr.wp-block-separator {
+    height: 1px;
+    background-color: var(--color-grey-200);
+    border: none;
+}
+
+/* endregion */
+
+/* region Quotes */
+
+blockquote.wp-block-quote {
+    margin: var(--spacing-10) 0;
+}
+blockquote.wp-block-quote::before {
+    display: block;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background-image: var(--icon-union-start);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+blockquote.wp-block-quote p {
+    margin: 0;
+    padding: var(--spacing-3) var(--spacing-7);
+    font: var(--font-quote);
+}
+
+blockquote.wp-block-quote cite {
+    font: var(--font-copy-sm);
+}
+blockquote.wp-block-quote cite::before {
+    display: block;
+    width: 48px;
+    height: 48px;
+    content: '';
+    background-image: var(--icon-union-end);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+}
+
+/* endregion */
+
+/* region Tables */
+
+figure.wp-block-table table {
+    border-collapse: collapse;
+}
+
+figure.wp-block-table table td,
+figure.wp-block-table table th {
+    padding: var(--spacing-3);
+    /* Default no style to MEGA Dashed */
+    border: 1px dashed var(--color-grey-350);
+    vertical-align: top;
+}
+
+figure.wp-block-table.justify-text {
+    text-align: justify;
+}
+
+figure.wp-block-table.is-style-regular table td,
+figure.wp-block-table.is-style-regular table th {
+    border: 1px solid var(--color-grey-200);
+}
+
+figure.wp-block-table.is-style-dashed table td,
+figure.wp-block-table.is-style-dashed table th {
+    border: 1px dashed var(--color-grey-350);
+}
+
+figure.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+    background-color: var(--color-bg-surface-1);
+}
+
+/* Prevent custom table colours & font sizes displaying on page */
+figure.wp-block-table table tr {
+    color: var(--color-copy-primary);
+    font-size: var(--spacing-5);
+    background-color: var(--color-bg-page);
+}
+
+figure.wp-block-table table img {
+    vertical-align: middle;
+}
+
+figure.wp-block-table table tr.bg-1,
+figure.wp-block-table table td.bg-1,
+figure.wp-block-table table th.bg-1 {
+    background-color: var(--color-bg-surface-1);
+}
+
+figure.wp-block-table table tr.bg-2,
+figure.wp-block-table table td.bg-2,
+figure.wp-block-table table th.bg-2 {
+    background-color: var(--color-bg-surface-2);
+}
+
+figure.wp-block-table table tr.bg-3,
+figure.wp-block-table table td.bg-3,
+figure.wp-block-table table th.bg-3 {
+    background-color: var(--color-bg-surface-3);
+}
+
+/* Breakpoint L */
+@media screen and (min-width: 1080px) {
+    figure.wp-block-table.medium-sized-table {
+        grid-column: 3 / -3;
+    }
+}
+
+/* Breakpoints S and M */
+@media screen and (min-width: 0) and (max-width: 1080px) {
+    figure.wp-block-table.medium-sized-table {
+        grid-column: 1 / -1;
+    }
+}
+
+/* endregion */

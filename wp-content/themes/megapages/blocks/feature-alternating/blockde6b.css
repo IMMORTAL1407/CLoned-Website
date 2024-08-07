@@ -1,0 +1,273 @@
+/**
+ * Styling for the alternating feature layout module.
+ */
+
+.centre-align.feature-alternating {
+    padding: var(--spacing-13) 0;
+    max-width: unset;
+}
+
+.centre-align.feature-alternating .texts.main-grid {
+    padding: 0 var(--default-padding);
+    max-width: 1320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.feature-alternating .text {
+    grid-column: 3 / -3;
+    max-width: 100%;
+    margin-bottom: var(--spacing-11);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--spacing-7);
+}
+
+.feature-alternating .features {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--spacing-12);
+}
+
+.right-align.feature-alternating {
+    padding: var(--spacing-13) var(--spacing-9) var(--spacing-13) 0;
+    grid-column: 3 / -1;
+}
+
+.right-align.feature-alternating .text {
+    grid-column: 1 / -3;
+    text-align: start;
+}
+
+.centre-align.feature-alternating .text > * {
+    text-align: center;
+}
+
+/* Breakpoint M  */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .feature-alternating .features:has(.type-b) {
+        margin-top: var(--spacing-12);
+    }
+
+    .right-align.feature-alternating {
+        padding: var(--spacing-9) var(--spacing-7) var(--spacing-13);
+        grid-column: 1 / -1;
+    }
+
+    .right-align.feature-alternating .text > * {
+        grid-column: 1 / -2;
+    }
+}
+
+/* Breakpoints M and S */
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+    .right-align.feature-alternating {
+        padding: var(--spacing-9) 0 var(--spacing-13);
+        grid-column: 1 / -1;
+    }
+
+    .feature-alternating .text {
+        grid-column: 1 / -1;
+    }
+
+    .centre-align.feature-alternating .text > * {
+        grid-column: 2 /-2;
+    }
+}
+
+/* Breakpoints S */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .feature-alternating .text {
+        grid-column: 1 / -1;
+    }
+}
+
+/* region Alternating Feature Inner Block */
+.feature-alternating .feature-block .container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    padding: 0 var(--default-padding);
+    max-width: 1320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.right-align.feature-alternating .feature-block .container {
+    padding: 0;
+}
+.feature-alternating .feature-block:nth-child(odd) .container,
+.feature-alternating.reversed .feature-block:nth-child(even) .container {
+    flex-direction: row;
+}
+.feature-alternating .feature-block:nth-child(even) .container,
+.feature-alternating.reversed .feature-block:nth-child(odd) .container {
+    flex-direction: row-reverse;
+}
+
+.feature-alternating .feature-block .text-pane {
+    flex-basis: calc(5 / 12 * 100%);
+    word-break: break-word;
+}
+.feature-alternating .feature-block:nth-child(odd) .text-pane,
+.feature-alternating.reversed .feature-block:nth-child(even) .text-pane {
+    padding-left: 0;
+    padding-right: var(--spacing-8);
+}
+.feature-alternating .feature-block:nth-child(even) .text-pane,
+.feature-alternating.reversed .feature-block:nth-child(odd) .text-pane {
+    padding-left: var(--spacing-8);
+    padding-right: 0;
+}
+
+.feature-alternating .feature-block .text-pane .heading {
+    margin-bottom: var(--spacing-7);
+    hyphens: auto;
+    hyphenate-limit-chars: 10 4 4;
+}
+
+.feature-alternating .feature-block.type-a .text-pane .blurb {
+    margin-bottom: var(--spacing-8);
+}
+
+.feature-alternating .feature-block.type-b .icon-blurbs {
+    margin: var(--spacing-8) 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--spacing-9);
+}
+
+.feature-alternating .feature-block .text-pane .text-button {
+    width: fit-content;
+}
+
+.feature-alternating .feature-block .img-box,
+.feature-alternating .feature-block .video-box {
+    flex: 0 0 calc(7 / 12 * 100%);
+    align-self: normal;
+}
+
+.feature-alternating .feature-block .img-box .img {
+    width: 100%;
+    height: 0;
+    background-size: cover;
+    /* Keep image in view (if text overhangs it) while scrolling */
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: var(--top-height);
+}
+
+.feature-alternating .feature-block .video-box video {
+    width: 100%;
+    display: block;
+}
+
+.theme-light .feature-alternating .feature-block .video-box video.dark {
+    display: none;
+}
+.theme-dark .feature-alternating .feature-block .video-box video.light {
+    display: none;
+}
+
+.feature-alternating .feature-block.type-a .img-box .img {
+    padding-top: calc(3 / 4 * 100%); /* 4:3 aspect ratio */
+}
+
+.feature-alternating .feature-block.type-b .img-box .img {
+    padding-top: 100%; /* 1:1 aspect ratio */
+}
+
+/* Breakpoint M */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .feature-alternating .feature-block.type-a .container {
+        gap: var(--spacing-7);
+    }
+
+    .feature-alternating .feature-block.type-b .text-pane > * {
+        grid-column: 2 / -2;
+    }
+
+    .feature-alternating .feature-block.type-b .img-box .img {
+        padding-top: calc(3 / 4 * 100%); /* 4:3 aspect ratio */
+    }
+}
+
+/* Breakpoints M and S */
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+    .feature-alternating .feature-block.type-b .container {
+        gap: var(--spacing-10);
+    }
+
+    .feature-alternating .feature-block.type-b .container ,
+    .feature-alternating.reversed .feature-block.type-b .container {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .feature-alternating .feature-block.type-b > * {
+        flex-basis: unset;
+    }
+
+    .feature-alternating .feature-block.type-b .text-pane,
+    .feature-alternating.reversed .feature-block.type-b .text-pane {
+        padding: unset;
+    }
+
+    .feature-alternating .feature-block.type-a .img-box .img {
+        padding-top: 100%; /* 1:1 aspect ratio */
+    }
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .feature-alternating .feature-block.type-a .container {
+        gap: var(--spacing-9);
+    }
+
+    .right-align.feature-alternating .feature-block .container {
+        padding: 0;
+    }
+
+    .feature-alternating .feature-block.type-a .container,
+    .feature-alternating.reversed .feature-block.type-a .container {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .feature-alternating .feature-block.type-a > * {
+        flex-basis: unset;
+    }
+
+    .feature-alternating .feature-block.type-a .text-pane,
+    .feature-alternating.reversed .feature-block.type-a .text-pane {
+        padding: unset;
+    }
+
+    .feature-alternating .feature-block.type-b .text-pane > * {
+        grid-column: 1 / -1;
+    }
+
+    .feature-alternating .feature-block.type-b .img-box .img {
+        padding-top: 100%; /* 1:1 aspect ratio */
+    }
+}
+
+/* region Icon Blurb (as used in Alternating Feature Type B feature module */
+
+.feature-alternating .feature-block .icon-blurb .icon-box {
+    margin-bottom: var(--spacing-7);
+}
+
+.feature-alternating .feature-block .icon-blurb .heading {
+    margin: var(--spacing-7) 0 var(--spacing-4);
+}
+
+/* Breakpoints M and S */
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+    .feature-alternating .feature-block .icon-blurb .heading {
+        margin: var(--spacing-5) 0 var(--spacing-3) 0;
+    }
+}
+
+/* endregion */
+
+/* endregion */

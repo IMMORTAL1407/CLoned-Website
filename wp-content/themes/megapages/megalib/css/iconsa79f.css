@@ -1,0 +1,830 @@
+/**
+ * Variable declarations and styling for icons common to all MEGA Wordpress sites.
+ *
+ * Design file: https://www.figma.com/file/pYAcv0NZhLfqe9NRLaHPbG/Brand-library?node-id=22%3A3
+ * M / S: medium / small, T / R: thin (light) / regular, O / S: outline / solid
+ */
+
+:root {
+    /* region Mono icons */
+
+    --icon-airplay-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/airplay-mto.svg');
+    --icon-alert-triangle-sro: url('https://mega.io/wp-content/themes/megapages/megalib/images/alert-triangle-sro.svg');
+    --icon-arrow-left-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/arrow-left-mro.svg');
+    --icon-arrow-right-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/arrow-right-mro.svg');
+    --icon-bell-ringing-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/bell-ringing-mto.svg');
+    --icon-calendar-01-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/calendar-01-mro.svg');
+    --icon-cast-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/cast-mto.svg');
+    --icon-check-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/check-mro.svg');
+    --icon-check-circle-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/check-circle-mro.svg');
+    --icon-check-circle-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/check-circle-mto.svg');
+    --icon-chevrons-left-sro: url('https://mega.io/wp-content/themes/megapages/megalib/images/chevrons-left-sro.svg');
+    --icon-chevrons-right-sro: url('https://mega.io/wp-content/themes/megapages/megalib/images/chevrons-right-sro.svg');
+    --icon-chevron-down-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/chevron-down-mro.svg');
+    --icon-chevron-left-sro: url('https://mega.io/wp-content/themes/megapages/megalib/images/chevron-left-sro.svg');
+    --icon-chevron-right-sro: url('https://mega.io/wp-content/themes/megapages/megalib/images/chevron-right-sro.svg');
+    --icon-chevron-up-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/chevron-up-mro.svg');
+    --icon-clock-rotate-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/clock-rotate-mto.svg');
+    --icon-cloud-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/cloud-mro.svg');
+    --icon-cloud-mrs: url('https://mega.io/wp-content/themes/megapages/megalib/images/cloud-mrs.svg');
+    --icon-cloud-download-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/cloud-download-mto.svg');
+    --icon-cloud-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/cloud-mto.svg');
+    --icon-cloud-upload-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/cloud-upload-mro.svg');
+    --icon-cloud-upload-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/cloud-upload-mto.svg');
+    --icon-code-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/code-mro.svg');
+    --icon-copy-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/copy-mro.svg');
+    --icon-database-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/database-mro.svg');
+    --icon-database-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/database-mto.svg');
+    --icon-more-horizontal-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/more-horizontal-mro.svg');
+    --icon-edit-3-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/edit-3-mto.svg');
+    --icon-emoji-happy-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/emoji-happy-mto.svg');
+    --icon-emoji-smile-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/emoji-smile-mto.svg');
+    --icon-emoji-wink-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/emoji-wink-mto.svg');
+    --icon-file-attachment-02-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/file-attachment-02-mro.svg');
+    --icon-file-edit-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/file-edit-mro.svg');
+    --icon-file-text-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/file-text-mro.svg');
+    --icon-file-text-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/file-text-mto.svg');
+    --icon-file-upload-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/file-upload-mto.svg');
+    --icon-filter-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/filter-mro.svg');
+    --icon-folder-arrow-01-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/folder-arrow-01-mto.svg');
+    --icon-folder-lock-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/folder-lock-mro.svg');
+    --icon-folder-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/folder-mro.svg');
+    --icon-folder-sync-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/folder-sync-mto.svg');
+    --icon-globe-01-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/globe-01-mro.svg');
+    --icon-globe-02-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/globe-02-mto.svg');
+    --icon-globe-eurafrica-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/globe-eurafrica-mto.svg');
+    --icon-hard-drive-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/hard-drive-mro.svg');
+    --icon-headset-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/headset-mto.svg');
+    --icon-heart-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/heart-mto.svg');
+    --icon-help-circle-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/help-circle-mro.svg');
+    --icon-image-01-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/image-01-mto.svg');
+    --icon-info-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/info-mro.svg');
+    --icon-key-01-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/key-01-mro.svg');
+    --icon-key-01-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/key-01-mto.svg');
+    --icon-lightbulb-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/lightbulb-mro.svg');
+    --icon-link-01-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/link-01-mro.svg');
+    --icon-lock-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/lock-mto.svg');
+    --icon-mail-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/mail-mto.svg');
+    --icon-map-pin-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/map-pin-mto.svg');
+    --icon-mega-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/mega-mto.svg');
+    --icon-menu-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/menu-mro.svg');
+    --icon-message-check-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/message-check-mto.svg');
+    --icon-message-circle-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/message-circle-mto.svg');
+    --icon-message-square-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/message-square-mro.svg');
+    --icon-minus-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/minus-mro.svg');
+    --icon-minus-circle-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/minus-circle-mro.svg');
+    --icon-monitor-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/monitor-mro.svg');
+    --icon-monitor-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/monitor-mto.svg');
+    --icon-moon-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/moon-mro.svg');
+    --icon-play-square-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/play-square-mto.svg');
+    --icon-plus-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/plus-mro.svg');
+    --icon-plus-circle-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/plus-circle-mro.svg');
+    --icon-printer-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/printer-mro.svg');
+    --icon-printer-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/printer-mto.svg');
+    --icon-rocket-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/rocket-mto.svg');
+    --icon-rss: url('https://mega.io/wp-content/themes/megapages/megalib/images/rss.svg');
+    --icon-search-sro: url('https://mega.io/wp-content/themes/megapages/megalib/images/search-sro.svg');
+    --icon-server-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/server-mto.svg');
+    --icon-share-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/share-mro.svg');
+    --icon-share-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/share-mto.svg');
+    --icon-shield-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/shield-mro.svg');
+    --icon-shield-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/shield-mto.svg');
+    --icon-sliders-horizontal-01-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/sliders-horizontal-01-mro.svg');
+    --icon-sliders-vertical-01-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/sliders-vertical-01-mto.svg');
+    --icon-star-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/star-mto.svg');
+    --icon-sun-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/sun-mro.svg');
+    --icon-sync-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/sync-mro.svg');
+    --icon-sync-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/sync-mto.svg');
+    --icon-user-circle-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/user-circle-mto.svg');
+    --icon-user-plus-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/user-plus-mto.svg');
+    --icon-users-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/users-mro.svg');
+    --icon-users-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/users-mto.svg');
+    --icon-video-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/video-mro.svg');
+    --icon-video-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/video-mto.svg');
+    --icon-x-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/x-mro.svg');
+    --icon-x-sto: url('https://mega.io/wp-content/themes/megapages/megalib/images/x-sto.svg');
+    --icon-zap-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/zap-mro.svg');
+    --icon-zap-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/zap-mto.svg');
+    --icon-zap-off-mro: url('https://mega.io/wp-content/themes/megapages/megalib/images/zap-off-mro.svg');
+    --icon-zap-off-mto: url('https://mega.io/wp-content/themes/megapages/megalib/images/zap-off-mto.svg');
+
+    /* endregion */
+
+    /* region Duotone icons */
+
+    --icon-android: url('https://mega.io/wp-content/themes/megapages/megalib/images/android-01-duotone.svg');
+    --icon-brain: url('https://mega.io/wp-content/themes/megapages/megalib/images/brain-duotone.svg');
+    --icon-bug: url('https://mega.io/wp-content/themes/megapages/megalib/images/bug-duotone.svg');
+    --icon-c-plus-plus: url('https://mega.io/wp-content/themes/megapages/megalib/images/c++-duotone.svg');
+    --icon-CMD: url('https://mega.io/wp-content/themes/megapages/megalib/images/CMD-duotone.svg');
+    --icon-copyright: url('https://mega.io/wp-content/themes/megapages/megalib/images/copyright.svg');
+    --icon-extension: url('https://mega.io/wp-content/themes/megapages/megalib/images/extension-duotone.svg');
+    --icon-hand: url('https://mega.io/wp-content/themes/megapages/megalib/images/hand-duotone.svg');
+    --icon-iOS: url('https://mega.io/wp-content/themes/megapages/megalib/images/iOS-duotone.svg');
+    --icon-lifebuoy: url('https://mega.io/wp-content/themes/megapages/megalib/images/lifebuoy-duotone.svg');
+    --icon-lightbulb: url('https://mega.io/wp-content/themes/megapages/megalib/images/lightbulb-duotone.svg');
+    --icon-media: url('https://mega.io/wp-content/themes/megapages/megalib/images/media-duotone.svg');
+    --icon-mega-sync: url('https://mega.io/wp-content/themes/megapages/megalib/images/sync-duotone.svg');
+    --icon-privacy: url('https://mega.io/wp-content/themes/megapages/megalib/images/privacy-duotone.svg');
+    --icon-SDK: url('https://mega.io/wp-content/themes/megapages/megalib/images/SDK-duotone.svg');
+    --icon-scale: url('https://mega.io/wp-content/themes/megapages/megalib/images/scale-duotone.svg');
+    --icon-shield-duotone: url('https://mega.io/wp-content/themes/megapages/megalib/images/shield-duotone.svg');
+    --icon-thunderbird: url('https://mega.io/wp-content/themes/megapages/megalib/images/thunderbird.svg');
+    --icon-tm: url('https://mega.io/wp-content/themes/megapages/megalib/images/tm-duotone.svg');
+    --icon-web: url('https://mega.io/wp-content/themes/megapages/megalib/images/web-01-duotone.svg');
+
+    /* endregion */
+
+    /* region Social icons */
+
+    --icon-social-facebook-m: url('https://mega.io/wp-content/themes/megapages/megalib/images/social-facebook-m.svg');
+    --icon-social-instagram-m: url('https://mega.io/wp-content/themes/megapages/megalib/images/social-instagram-m.svg');
+    --icon-social-linkedin-m: url('https://mega.io/wp-content/themes/megapages/megalib/images/social-linkedin-m.svg');
+    --icon-social-threads-m: url('https://mega.io/wp-content/themes/megapages/megalib/images/social-threads-m.svg');
+    --icon-social-x-m: url('https://mega.io/wp-content/themes/megapages/megalib/images/social-x-m.svg');
+    --icon-social-youtube-m: url('https://mega.io/wp-content/themes/megapages/megalib/images/social-youtube-m.svg');
+
+    /* endregion */
+
+    --icon-rectangle-748: url('https://mega.io/wp-content/themes/megapages/megalib/images/rectangle-748.svg');
+    --icon-union-start: url('https://mega.io/wp-content/themes/megapages/megalib/images/union.svg');
+    --icon-union-end: url('https://mega.io/wp-content/themes/megapages/megalib/images/unionend.svg');
+}
+
+.icon-box {
+    --icon-size: 24px;
+    flex-shrink: 0; /* Don't shrink if used in a flexbox context */
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    color: inherit;
+    background-color: currentColor;
+}
+
+/* region Mono icons */
+
+.icon.alert-triangle {
+    mask-image: var(--icon-alert-triangle-sro);
+    -webkit-mask-image: var(--icon-alert-triangle-sro);
+}
+
+.icon.airplay-mto {
+    mask-image: var(--icon-airplay-mto);
+    -webkit-mask-image: var(--icon-airplay-mto);
+}
+
+.icon.arrow-left {
+    mask-image: var(--icon-arrow-left-mro);
+    -webkit-mask-image: var(--icon-arrow-left-mro);
+}
+
+.icon.arrow-right {
+    mask-image: var(--icon-arrow-right-mro);
+    -webkit-mask-image: var(--icon-arrow-right-mro);
+}
+
+.icon.bell-ringing-mto {
+    mask-image: var(--icon-bell-ringing-mto);
+    -webkit-mask-image: var(--icon-bell-ringing-mto);
+}
+
+.icon.calendar {
+    mask-image: var(--icon-calendar-01-mro);
+    -webkit-mask-image: var(--icon-calendar-01-mro);
+}
+
+.icon.cast-mto {
+    mask-image: var(--icon-cast-mto);
+    -webkit-mask-image: var(--icon-cast-mto);
+}
+
+.icon.check {
+    mask-image: var(--icon-check-mro);
+    -webkit-mask-image: var(--icon-check-mro);
+}
+
+.icon.check-circle {
+    mask-image: var(--icon-check-circle-mro);
+    -webkit-mask-image: var(--icon-check-circle-mro);
+}
+
+.icon.check-circle-mto {
+    mask-image: var(--icon-check-circle-mto);
+    -webkit-mask-image: var(--icon-check-circle-mto);
+}
+
+.icon.chevron-2left {
+    mask-image: var(--icon-chevrons-left-sro);
+    -webkit-mask-image: var(--icon-chevrons-left-sro);
+}
+
+.icon.chevron-2right {
+    mask-image: var(--icon-chevrons-right-sro);
+    -webkit-mask-image: var(--icon-chevrons-right-sro);
+}
+
+.icon.chevron-down {
+    mask-image: var(--icon-chevron-down-mro);
+    -webkit-mask-image: var(--icon-chevron-down-mro);
+}
+
+.icon.chevron-left {
+    mask-image: var(--icon-chevron-left-sro);
+    -webkit-mask-image: var(--icon-chevron-left-sro);
+}
+
+.icon.chevron-right {
+    mask-image: var(--icon-chevron-right-sro);
+    -webkit-mask-image: var(--icon-chevron-right-sro);
+}
+
+.icon.chevron-up {
+    mask-image: var(--icon-chevron-up-mro);
+    -webkit-mask-image: var(--icon-chevron-up-mro);
+}
+
+.icon.clock-rotate-mto {
+    mask-image: var(--icon-clock-rotate-mto);
+    -webkit-mask-image: var(--icon-clock-rotate-mto);
+}
+
+.icon.cloud {
+    mask-image: var(--icon-cloud-mro);
+    -webkit-mask-image: var(--icon-cloud-mro);
+}
+
+.icon.cloud-download-mto {
+    mask-image: var(--icon-cloud-download-mto);
+    -webkit-mask-image: var(--icon-cloud-download-mto);
+}
+
+.icon.cloud-mto {
+    mask-image: var(--icon-cloud-mto);
+    -webkit-mask-image: var(--icon-cloud-mto);
+}
+
+.icon.cloud-upload-mro {
+    mask-image: var(--icon-cloud-upload-mro);
+    -webkit-mask-image: var(--icon-cloud-upload-mro);
+}
+
+.icon.cloud-upload-mto {
+    mask-image: var(--icon-cloud-upload-mto);
+    -webkit-mask-image: var(--icon-cloud-upload-mto);
+}
+
+.icon.cloud-white {
+    mask-image: var(--icon-cloud-mrs);
+    -webkit-mask-image: var(--icon-cloud-mrs);
+}
+
+.icon.code {
+    mask-image: var(--icon-code-mro);
+    -webkit-mask-image: var(--icon-code-mro);
+}
+
+.icon.copy {
+    mask-image: var(--icon-copy-mro);
+    -webkit-mask-image: var(--icon-copy-mro);
+}
+
+.icon.database {
+    mask-image: var(--icon-database-mro);
+    -webkit-mask-image: var(--icon-database-mro);
+}
+
+.icon.database-mto {
+    mask-image: var(--icon-database-mto);
+    -webkit-mask-image: var(--icon-database-mto);
+}
+
+.icon.edit-3-mto {
+    mask-image: var(--icon-edit-3-mto);
+    -webkit-mask-image: var(--icon-edit-3-mto);
+}
+
+.icon.emoji-happy-mto {
+    mask-image: var(--icon-emoji-happy-mto);
+    -webkit-mask-image: var(--icon-emoji-happy-mto);
+}
+
+.icon.emoji-smile-mto {
+    mask-image: var(--icon-emoji-smile-mto);
+    -webkit-mask-image: var(--icon-emoji-smile-mto);
+}
+
+.icon.emoji-wink-mto {
+    mask-image: var(--icon-emoji-wink-mto);
+    -webkit-mask-image: var(--icon-emoji-wink-mto);
+}
+
+.icon.file-attachment-02-mro {
+    mask-image: var(--icon-file-attachment-02-mro);
+    -webkit-mask-image: var(--icon-file-attachment-02-mro);
+}
+
+.icon.file-edit-mro {
+    mask-image: var(--icon-file-edit-mro);
+    -webkit-mask-image: var(--icon-file-edit-mro);
+}
+
+.icon.file-text-mro {
+    mask-image: var(--icon-file-text-mro);
+    -webkit-mask-image: var(--icon-file-text-mro);
+}
+
+.icon.file-text-mto {
+    mask-image: var(--icon-file-text-mto);
+    -webkit-mask-image: var(--icon-file-text-mto);
+}
+
+.icon.file-upload-mto {
+    mask-image: var(--icon-file-upload-mto);
+    -webkit-mask-image: var(--icon-file-upload-mto);
+}
+
+.icon.file-filter {
+    mask-image: var(--icon-filter-mro);
+    -webkit-mask-image: var(--icon-filter-mro);
+}
+
+.icon.folder-arrow-01-mto {
+    mask-image: var(--icon-folder-arrow-01-mto);
+    -webkit-mask-image: var(--icon-folder-arrow-01-mto);
+}
+
+.icon.folder-lock-mro {
+    mask-image: var(--icon-folder-lock-mro);
+    -webkit-mask-image: var(--icon-folder-lock-mro);
+}
+
+.icon.folder-mro {
+    mask-image: var(--icon-folder-mro);
+    -webkit-mask-image: var(--icon-folder-mro);
+}
+
+.icon.folder-sync-mto {
+    mask-image: var(--icon-folder-sync-mto);
+    -webkit-mask-image: var(--icon-folder-sync-mto);
+}
+
+.icon.globe {
+    mask-image: var(--icon-globe-01-mro);
+    -webkit-mask-image: var(--icon-globe-01-mro);
+}
+
+.icon.globe-02-mto {
+    mask-image: var(--icon-globe-02-mto);
+    -webkit-mask-image: var(--icon-globe-02-mto);
+}
+
+.icon.globe-eurafrica-mto {
+    mask-image: var(--icon-globe-eurafrica-mto);
+    -webkit-mask-image: var(--icon-globe-eurafrica-mto);
+}
+
+.icon.hard-drive {
+    mask-image: var(--icon-hard-drive-mro);
+    -webkit-mask-image: var(--icon-hard-drive-mro);
+}
+
+.icon.headset-mto {
+    mask-image: var(--icon-headset-mto);
+    -webkit-mask-image: var(--icon-headset-mto);
+}
+
+.icon.heart-mto {
+    mask-image: var(--icon-heart-mto);
+    -webkit-mask-image: var(--icon-heart-mto);
+}
+
+.icon.help-circle {
+    mask-image: var(--icon-help-circle-mro);
+    -webkit-mask-image: var(--icon-help-circle-mro);
+}
+
+.icon.image-01-mto {
+    mask-image: var(--icon-image-01-mto);
+    -webkit-mask-image: var(--icon-image-01-mto);
+}
+
+.icon.info {
+    mask-image: var(--icon-info-mro);
+    -webkit-mask-image: var(--icon-info-mro);
+}
+
+.icon.key-01-mro {
+    mask-image: var(--icon-key-01-mro);
+    -webkit-mask-image: var(--icon-key-01-mro);
+}
+
+.icon.key-01-mto {
+    mask-image: var(--icon-key-01-mto);
+    -webkit-mask-image: var(--icon-key-01-mto);
+}
+
+.icon.lightbulb-mro {
+    mask-image: var(--icon-lightbulb-mro);
+    -webkit-mask-image: var(--icon-lightbulb-mro);
+}
+
+.icon.link-01-mro {
+    mask-image: var(--icon-link-01-mro);
+    -webkit-mask-image: var(--icon-link-01-mro);
+}
+
+.icon.lock-mto {
+    mask-image: var(--icon-lock-mto);
+    -webkit-mask-image: var(--icon-lock-mto);
+}
+
+.icon.mail {
+    mask-image: var(--icon-mail-mto);
+    -webkit-mask-image: var(--icon-mail-mto);
+}
+
+.icon.mail-mto {
+    mask-image: var(--icon-mail-mto);
+    -webkit-mask-image: var(--icon-mail-mto);
+}
+
+.icon.map-pin {
+    mask-image: var(--icon-map-pin-mto);
+    -webkit-mask-image: var(--icon-map-pin-mto);
+}
+
+.icon.map-pin-mto {
+    mask-image: var(--icon-map-pin-mto);
+    -webkit-mask-image: var(--icon-map-pin-mto);
+}
+
+.icon.mega-mto {
+    mask-image: var(--icon-mega-mto);
+    -webkit-mask-image: var(--icon-mega-mto);
+}
+
+.icon.menu {
+    mask-image: var(--icon-menu-mro);
+    -webkit-mask-image: var(--icon-menu-mro);
+}
+
+.icon.message-check-mto {
+    mask-image: var(--icon-message-check-mto);
+    -webkit-mask-image: var(--icon-message-check-mto);
+}
+
+.icon.message-circle-mto {
+    mask-image: var(--icon-message-circle-mto);
+    -webkit-mask-image: var(--icon-message-circle-mto);
+}
+
+.icon.message-square {
+    mask-image: var(--icon-message-square-mro);
+    -webkit-mask-image: var(--icon-message-square-mro);
+}
+
+.icon.minus {
+    mask-image: var(--icon-minus-mro);
+    -webkit-mask-image: var(--icon-minus-mro);
+}
+
+.icon.minus-circle-mro {
+    mask-image: var(--icon-minus-circle-mro);
+    -webkit-mask-image: var(--icon-minus-circle-mro);
+}
+
+.icon.monitor-mro {
+    mask-image: var(--icon-monitor-mro);
+    -webkit-mask-image: var(--icon-monitor-mro);
+}
+
+.icon.monitor-mto {
+    mask-image: var(--icon-monitor-mto);
+    -webkit-mask-image: var(--icon-monitor-mto);
+}
+
+.icon.moon {
+    mask-image: var(--icon-moon-mro);
+    -webkit-mask-image: var(--icon-moon-mro);
+}
+
+.icon.more-horizontal-mro {
+    mask-image: var(--icon-more-horizontal-mro);
+    -webkit-mask-image: var(--icon-more-horizontal-mro);
+}
+
+.icon.play-square-mto {
+    mask-image: var(--icon-play-square-mto);
+    -webkit-mask-image: var(--icon-play-square-mto);
+}
+
+.icon.rocket-mto {
+    mask-image: var(--icon-rocket-mto);
+    -webkit-mask-image: var(--icon-rocket-mto);
+}
+
+.icon.search {
+    mask-image: var(--icon-search-sro);
+    -webkit-mask-image: var(--icon-search-sro);
+}
+
+.icon.server-mto {
+    mask-image: var(--icon-server-mto);
+    -webkit-mask-image: var(--icon-server-mto);
+}
+
+.icon.share-mto {
+    mask-image: var(--icon-share-mto);
+    -webkit-mask-image: var(--icon-share-mto);
+}
+
+.icon.shield-mto {
+    mask-image: var(--icon-shield-mto);
+    -webkit-mask-image: var(--icon-shield-mto);
+}
+
+.icon.sliders-horizontal-01-mro {
+    mask-image: var(--icon-sliders-horizontal-01-mro);
+    -webkit-mask-image: var(--icon-sliders-horizontal-01-mro);
+}
+
+.icon.sliders-vertical-01-mto {
+    mask-image: var(--icon-sliders-vertical-01-mto);
+    -webkit-mask-image: var(--icon-sliders-vertical-01-mto);
+}
+
+.icon.star-mto {
+    mask-image: var(--icon-star-mto);
+    -webkit-mask-image: var(--icon-star-mto);
+}
+
+.icon.sync-mto {
+    mask-image: var(--icon-sync-mto);
+    -webkit-mask-image: var(--icon-sync-mto);
+}
+
+.icon.plus {
+    mask-image: var(--icon-plus-mro);
+    -webkit-mask-image: var(--icon-plus-mro);
+}
+
+.icon.plus-circle {
+    mask-image: var(--icon-plus-circle-mro);
+    -webkit-mask-image: var(--icon-plus-circle-mro);
+}
+
+.icon.printer-mro {
+    mask-image: var(--icon-printer-mro);
+    -webkit-mask-image: var(--icon-printer-mro);
+}
+
+.icon.printer-mto {
+    mask-image: var(--icon-printer-mto);
+    -webkit-mask-image: var(--icon-printer-mto);
+}
+
+.icon.rss {
+    mask-image: var(--icon-rss);
+    -webkit-mask-image: var(--icon-rss);
+}
+
+.icon.share {
+    mask-image: var(--icon-share-mro);
+    -webkit-mask-image: var(--icon-share-mro);
+}
+
+.icon.shield {
+    mask-image: var(--icon-shield-mro);
+    -webkit-mask-image: var(--icon-shield-mro);
+}
+
+.icon.sun {
+    mask-image: var(--icon-sun-mro);
+    -webkit-mask-image: var(--icon-sun-mro);
+}
+
+.icon.sync {
+    mask-image: var(--icon-sync-mro);
+    -webkit-mask-image: var(--icon-sync-mro);
+}
+
+.icon.user-circle-mto {
+    mask-image: var(--icon-user-circle-mto);
+    -webkit-mask-image: var(--icon-user-circle-mto);
+}
+
+.icon.user-plus-mto {
+    mask-image: var(--icon-user-plus-mto);
+    -webkit-mask-image: var(--icon-user-plus-mto);
+}
+
+.icon.users-mro {
+    mask-image: var(--icon-users-mro);
+    -webkit-mask-image: var(--icon-users-mro);
+}
+
+.icon.users-mto {
+    mask-image: var(--icon-users-mto);
+    -webkit-mask-image: var(--icon-users-mto);
+}
+
+.icon.video-mro {
+    mask-image: var(--icon-video-mro);
+    -webkit-mask-image: var(--icon-video-mro);
+}
+
+.icon.video-mto {
+    mask-image: var(--icon-video-mto);
+    -webkit-mask-image: var(--icon-video-mto);
+}
+
+.icon.x {
+    mask-image: var(--icon-x-sto);
+    -webkit-mask-image: var(--icon-x-sto);
+}
+
+.icon.x-mro {
+    mask-image: var(--icon-x-mro);
+    -webkit-mask-image: var(--icon-x-mro);
+}
+
+.icon.zap-mro {
+    mask-image: var(--icon-zap-mro);
+    -webkit-mask-image: var(--icon-zap-mro);
+}
+
+.icon.zap-mto {
+    mask-image: var(--icon-zap-mto);
+    -webkit-mask-image: var(--icon-zap-mto);
+}
+
+.icon.zap-off-mro {
+    mask-image: var(--icon-zap-off-mro);
+    -webkit-mask-image: var(--icon-zap-off-mro);
+}
+
+.icon.zap-off-mto {
+    mask-image: var(--icon-zap-off-mto);
+    -webkit-mask-image: var(--icon-zap-off-mto);
+}
+
+/* endregion */
+
+/* region Duotone icons */
+
+.icon.android {
+    mask-image: var(--icon-android);
+    -webkit-mask-image: var(--icon-android);
+}
+
+.icon.brain {
+    mask-image: var(--icon-brain);
+    -webkit-mask-image: var(--icon-brain);
+}
+
+.icon.bug {
+    mask-image: var(--icon-bug);
+    -webkit-mask-image: var(--icon-bug);
+}
+
+.icon.c-plus-plus {
+    mask-image: var(--icon-c-plus-plus);
+    -webkit-mask-image: var(--icon-c-plus-plus);
+}
+
+.icon.CMD {
+    mask-image: var(--icon-CMD);
+    -webkit-mask-image: var(--icon-CMD);
+}
+
+.icon.copyright {
+    mask-image: var(--icon-copyright);
+    -webkit-mask-image: var(--icon-copyright);
+}
+
+.icon.extension {
+    mask-image: var(--icon-extension);
+    -webkit-mask-image: var(--icon-extension);
+}
+
+.icon.hand {
+    mask-image: var(--icon-hand);
+    -webkit-mask-image: var(--icon-hand);
+}
+
+.icon.iOS {
+    mask-image: var(--icon-iOS);
+    -webkit-mask-image: var(--icon-iOS);
+}
+
+.icon.lifebuoy {
+    mask-image: var(--icon-lifebuoy);
+    -webkit-mask-image: var(--icon-lifebuoy);
+}
+
+.icon.lightbulb {
+    mask-image: var(--icon-lightbulb);
+    -webkit-mask-image: var(--icon-lightbulb);
+}
+
+.icon.media {
+    mask-image: var(--icon-media);
+    -webkit-mask-image: var(--icon-media);
+}
+
+.icon.mega-sync {
+    mask-image: var(--icon-mega-sync);
+    -webkit-mask-image: var(--icon-mega-sync);
+}
+
+.icon.privacy {
+    mask-image: var(--icon-privacy);
+    -webkit-mask-image: var(--icon-privacy);
+}
+
+.icon.scale {
+    mask-image: var(--icon-scale);
+    -webkit-mask-image: var(--icon-scale);
+}
+
+.icon.SDK {
+    mask-image: var(--icon-SDK);
+    -webkit-mask-image: var(--icon-SDK);
+}
+
+.icon.shield-duotone {
+    mask-image: var(--icon-shield-duotone);
+    -webkit-mask-image: var(--icon-shield-duotone);
+}
+
+.icon.thunderbird {
+    mask-image: var(--icon-thunderbird);
+    -webkit-mask-image: var(--icon-thunderbird);
+}
+
+.icon.tm {
+    mask-image: var(--icon-tm);
+    -webkit-mask-image: var(--icon-tm);
+}
+
+.icon.web {
+    mask-image: var(--icon-web);
+    -webkit-mask-image: var(--icon-web);
+}
+
+/* endregion */
+
+/* region Social icons */
+
+.icon.social-facebook {
+    mask-image: var(--icon-social-facebook-m);
+    -webkit-mask-image: var(--icon-social-facebook-m);
+}
+
+.icon.social-instagram {
+    mask-image: var(--icon-social-instagram-m);
+    -webkit-mask-image: var(--icon-social-instagram-m);
+}
+
+.icon.social-linkedin {
+    mask-image: var(--icon-social-linkedin-m);
+    -webkit-mask-image: var(--icon-social-linkedin-m);
+}
+
+.icon.social-threads {
+    mask-image: var(--icon-social-threads-m);
+    -webkit-mask-image: var(--icon-social-threads-m);
+}
+
+.icon.social-X {
+    mask-image: var(--icon-social-x-m);
+    -webkit-mask-image: var(--icon-social-x-m);
+}
+
+.icon.social-youtube {
+    mask-image: var(--icon-social-youtube-m);
+    -webkit-mask-image: var(--icon-social-youtube-m);
+}
+
+/* endregion */
+
+.icon.rectangle-748 {
+    mask-image: var(--icon-rectangle-748);
+    -webkit-mask-image: var(--icon-rectangle-748);
+}
+
+.icon.union-start {
+    mask-image: var(--icon-union-start);
+    -webkit-mask-image: var(--icon-union-start);
+}

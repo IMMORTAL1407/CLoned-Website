@@ -1,0 +1,129 @@
+/**
+ * Styling for dialogs common to megapages.
+ */
+
+/* region Mobile Navigation Menu */
+
+.mobile-modal.nav-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.mobile-modal.nav-menu .scroll-pane {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 100%;
+    padding: var(--modal-padding);
+    overflow-y: scroll;
+}
+
+.mobile-modal.nav-menu .menu-item {
+    font: var(--font-copy-md-bold);
+    color: var(--color-heading);
+    border-bottom: 1px solid var(--color-grey-100);
+    cursor: pointer;
+}
+.mobile-modal.nav-menu a.menu-item {
+    line-height: 48px;
+    text-decoration: none;
+}
+
+.mobile-modal.nav-menu .accordion .accordion-toggle {
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-modal.nav-menu .accordion .item-name {
+    line-height: 32px;
+}
+.mobile-modal.nav-menu .accordion.expanded .item-name {
+    border-top: 2px solid transparent; /* Counteract effects of border-bottom */
+    border-bottom: 2px solid var(--color-primary-red-500);
+}
+.mobile-modal.nav-menu .accordion .accordion-toggle .icon-box {
+    --icon-size: 20px;
+    transition: var(--transition-transform);
+}
+.mobile-modal.nav-menu .accordion.expanded .accordion-toggle .icon-box {
+    transform: rotate(180deg);
+}
+
+.mobile-modal.nav-menu .menu-collection,
+.mobile-modal.nav-menu .icon-descs {
+    padding: var(--spacing-5) 0;
+}
+.mobile-modal.nav-menu .icon-descs .heading {
+    margin-bottom: var(--spacing-2);
+}
+
+.mobile-modal.nav-menu .icon-desc {
+    padding: var(--spacing-5) 0;
+}
+
+.mobile-modal.nav-menu .promo-banner {
+    margin: 0 calc(var(--modal-padding) * -1);
+    padding: var(--modal-padding);
+    background-color: var(--color-bg-surface-1);
+}
+
+.mobile-modal.nav-menu .promo-banner .promo-img {
+    flex: 0 0 286px;
+    height: calc(286px / 16 * 9); /* aspect ratio 16:9 */
+}
+
+.mobile-modal.nav-menu .buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--spacing-5);
+    margin-top: 32px; /* For all breakpoints */
+}
+
+.mobile-modal.nav-menu .buttons button {
+    all: unset;
+    display: flex;
+    gap: var(--spacing-4);
+    align-items: center;
+    font: var(--font-caption-lg-bold);
+    letter-spacing: var(--font-caption-lg-spacing);
+    cursor: pointer;
+}
+
+.mobile-modal.nav-menu .bottom-bar {
+    display: none;
+    padding: var(--spacing-4) var(--spacing-7);
+    flex-flow: row wrap;
+    gap: var(--spacing-5);
+    background-color: var(--color-bg-page);
+    box-sizing: border-box;
+    border-top: 1px solid var(--color-grey-100);
+}
+
+/* Breakpoints S and smaller */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .mobile-modal.nav-menu .promo-banner .promo-content {
+        flex-direction: column;
+    }
+    .mobile-modal.nav-menu .promo-banner .promo-img {
+        width: 100%;
+        height: unset;
+        flex: unset;
+    }
+    .mobile-modal.nav-menu .promo-banner .promo-img .img {
+        position: relative;
+        height: 0;
+        margin: 0 auto;
+        padding-bottom: 56.25%; /* aspect ratio 16 / 9 */
+    }
+
+    .mobile-modal.nav-menu .bottom-bar {
+        display: flex;
+    }
+
+    .mobile-modal.nav-menu .bottom-bar > .button {
+        flex: 1;
+    }
+}
+
+/* endregion */

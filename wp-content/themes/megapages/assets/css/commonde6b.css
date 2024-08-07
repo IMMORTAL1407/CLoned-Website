@@ -1,0 +1,175 @@
+/**
+ * CSS common to all megapages pages.
+ */
+
+/* region Tables */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+figure.wp-block-table::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+figure.wp-block-table {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+figure.wp-block-table table td,
+figure.wp-block-table table th {
+    padding: var(--spacing-5);
+}
+
+figure.wp-block-table table td.has-text-align-center .icon-box {
+    margin: 0 auto;
+}
+
+figure.wp-block-table table td.has-text-align-center .icon-box .icon.x {
+    color: var(--color-link-disabled);
+}
+
+figure.wp-block-table figcaption {
+    margin-top: var(--spacing-7);
+    font: var(--font-copy-sm);
+    color: var(--color-copy-secondary);
+}
+
+figure.wp-block-image figcaption {
+    margin: var(--spacing-7) 0 0;
+    font: var(--font-copy-sm);
+    color: var(--color-copy-secondary);
+}
+
+/* endregion */
+
+/* region Inputs */
+
+input.hidden-input {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 0;
+    border: none;
+    outline: none;
+}
+
+/* endregion */
+
+.page-container a:link:not(.button, .text-button, .link) {
+    color: var(--color-secondary-cobalt-500);
+}
+
+.theme-dark .page-container a:link:not(.button,.text-button, .link),
+.page-container a:visited:not(.text-button,.button, .link) {
+    color: var(--color-secondary-cobalt-700);
+}
+
+.theme-dark .page-container a:visited:not(.button, .text-button, .link) {
+    color: var(--color-secondary-cobalt-800);
+}
+
+.icon.color-primary-red-500 {
+    color: var(--color-primary-red-500)
+}
+
+.backup-page-table table thead th:nth-child(2) {
+    color: var(--color-primary-red-500);
+}
+
+:root .page-container :lang(en) {
+    --font-family-for-headings: var(--font-family-poppins);
+    --font-family-for-copy: var(--font-family-inter);
+
+    --font-h1: normal bold 60px/72px var(--font-family-for-headings);
+    --font-h1-spacing: -0.3px;
+
+    --font-h2: normal 600 48px/56px var(--font-family-for-headings);
+    --font-h2-spacing: -0.24px;
+
+    --font-h3: normal 600 40px/48px var(--font-family-for-headings);
+    --font-h3-spacing: 0;
+
+    --font-h4: normal 600 32px/40px var(--font-family-for-headings);
+    --font-h4-spacing: 0.08px;
+
+    --font-h5: normal 600 24px/28px var(--font-family-for-headings);
+    --font-h5-spacing: 0;
+
+    --font-h6: normal bold 20px/24px var(--font-family-for-copy);
+    --font-h6-spacing: 0.0025em;
+
+    /* Body Copy */
+    --font-copy-lg: normal normal 18px/28px var(--font-family-for-copy);
+    --font-copy-lg-bold: normal bold 18px/28px var(--font-family-for-copy);
+    --font-copy-md: normal normal 16px/24px var(--font-family-for-copy);
+    --font-copy-md-bold: normal bold 16px/24px var(--font-family-for-copy);
+    --font-copy-sm: normal normal 14px/20px var(--font-family-for-copy);
+    --font-copy-sm-bold: normal bold 14px/20px var(--font-family-for-copy);
+
+    /* For font-copy-allcaps: Use uppercase text (via source text only, for localisation support) */
+    --font-copy-allcaps-lg: normal bold 20px/24px var(--font-family-for-copy);
+    --font-copy-allcaps-lg-spacing: 0.08em;
+    --font-copy-allcaps-md: normal bold 18px/20px var(--font-family-for-copy);
+    --font-copy-allcaps-md-spacing: 0.08em;
+    --font-copy-allcaps-sm: normal bold 12px/16px var(--font-family-for-copy);
+    --font-copy-allcaps-sm-spacing: 0.08em;
+    --font-copy-allcaps-sm-wide-spacing: 0.2em;
+
+    /* Link fonts (common to all grid sizes and all with text-underline) */
+    --font-link-lg: normal normal 18px/24px var(--font-family-for-copy);
+    --font-link-lg-bold: normal bold 18px/24px var(--font-family-for-copy);
+    --font-link-md: normal normal 16px/24px var(--font-family-for-copy);
+    --font-link-md-bold: normal bold 16px/24px var(--font-family-for-copy);
+    --font-link-sm: normal normal 14px/20px var(--font-family-for-copy);
+    --font-link-sm-semibold: normal 600 14px/20px var(--font-family-for-copy);
+    --font-link-sm-bold: normal bold 14px/20px var(--font-family-for-copy);
+
+    /* buttons fonts */
+    --font-btn-xl: normal 600 18px/24px var(--font-family-for-copy);
+    --font-btn-xl-spacing: 0.01em;
+    --font-btn-lg: normal 600 16px/24px var(--font-family-for-copy);
+    --font-btn-lg-spacing: 0;
+    --font-btn-md: normal 600 16px/20px var(--font-family-for-copy);
+    --font-btn-md-spacing: 0;
+    --font-btn-sm: normal 600 14px/20px var(--font-family-for-copy);
+    --font-btn-sm-spacing: 0;
+
+    /* caption fonts */
+    --font-caption-lg: normal 400 14px/20px var(--font-family-for-copy);
+    --font-caption-lg-bold: normal 600 14px/20px var(--font-family-for-copy);
+    --font-caption-lg-spacing: 0;
+    --font-caption-md: normal 500 12px/18px var(--font-family-for-copy);
+    --font-caption-md-bold: normal 600 12px/18px var(--font-family-for-copy);
+    --font-caption-md-spacing: 0.02em;
+
+    /* Quotation */
+    --font-quote: italic 400 18px/28px var(--font-family-for-copy);
+    --font-quote-bold: normal 400 32px/44px var(--font-family-for-copy);
+
+    /* Input Fields */
+    --font-input-xl: normal normal 18px/24px var(--font-family-for-copy);
+    --font-input-lg: normal normal 16px/24px var(--font-family-for-copy);
+    --font-input-md: normal normal 16px/20px var(--font-family-for-copy);
+    --font-input-sm: normal medium 14px/20px var(--font-family-for-copy);
+
+    /* Data */
+    --font-data-zero: normal 600 56px/64px var(--font-family-for-headings);
+    --font-data-one: normal 600 48px/56px var(--font-family-for-headings);
+    --font-data-two: normal 600 40px/48px var(--font-family-for-headings);
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0) and (max-width: 768px) {
+    .heading {
+        hyphens: auto;
+        hyphenate-limit-chars: 10 4 4;
+    }
+
+    /* Override default WP table width for megapages pages */
+    figure.wp-block-table table {
+        width: 720px;
+    }
+}
+
+/* endregion */

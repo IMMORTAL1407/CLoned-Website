@@ -1,0 +1,224 @@
+/**
+ * Styling for the banner full width module.
+ */
+
+.full-width-banner {
+    padding: 0;
+    max-width: unset;
+}
+.full-width-banner.light-grey {
+    background-color: var(--color-grey-100);
+}
+.full-width-banner.cobalt {
+    background-color: var(--color-secondary-cobalt-900);
+}
+.full-width-banner.red {
+    background-color: var(--color-primary-red-50);
+}
+.theme-light .full-width-banner.black {
+    background-color: var(--color-primary-black-800);
+}
+.theme-dark .full-width-banner.black {
+    background-color: var(--color-primary-black-200);
+}
+.full-width-banner.dark-grey,
+.full-width-banner.typo {
+    background-color: var(--color-grey-850);
+}
+
+.full-width-banner .banner-contents {
+    display: flex;
+    flex-direction: row;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.full-width-banner .banner-contents.reversed {
+    flex-direction: row-reverse;
+}
+
+.full-width-banner .img-box {
+    flex: 4;
+}
+
+.full-width-banner .img-box .img {
+    background-size: cover;
+}
+
+.full-width-banner .content-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+    padding: var(--spacing-11) var(--default-padding);
+    flex: 8;
+}
+.full-width-banner.no-blurb .content-container {
+    gap: var(--spacing-9);
+}
+.full-width-banner.typo .content-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-8);
+    padding: var(--spacing-11) var(--spacing-9) var(--spacing-12);
+}
+
+.full-width-banner.dark-grey .heading,
+.full-width-banner.cobalt .heading,
+.full-width-banner.typo .heading,
+.theme-light .full-width-banner.black .heading {
+    color: var(--color-grey-50);
+}
+.theme-dark .full-width-banner.black .heading {
+    color: var(--color-grey-1000);
+}
+
+/* region dark banner text button colours */
+
+.full-width-banner.dark-grey .text-button:not(:hover),
+.full-width-banner.cobalt .text-button:not(:hover),
+.full-width-banner.typo .text-button:not(:hover),
+.theme-light .full-width-banner.black .text-button:not(:hover) {
+    color: var(--color-primary-black-50);
+}
+.theme-dark .full-width-banner.black .text-button:not(:hover) {
+    color: var(--color-primary-black-900);
+}
+
+.theme-light .full-width-banner.dark-grey .text-button:visited
+.theme-light .full-width-banner.dark-grey .text-button:visited > *,
+.theme-light .full-width-banner.cobalt .text-button:visited,
+.theme-light .full-width-banner.cobalt .text-button:visited > *,
+.theme-light .full-width-banner.typo .text-button:visited,
+.theme-light .full-width-banner.typo .text-button:visited > *,
+.theme-light .full-width-banner.black .text-button:visited,
+.theme-light .full-width-banner.black .text-button:visited > * {
+    color: var(--color-primary-black-200);
+}
+
+.theme-dark .full-width-banner.dark-grey .text-button:visited
+.theme-dark .full-width-banner.dark-grey .text-button:visited > *,
+.theme-dark .full-width-banner.cobalt .text-button:visited,
+.theme-dark .full-width-banner.cobalt .text-button:visited > *,
+.theme-dark .full-width-banner.typo .text-button:visited,
+.theme-dark .full-width-banner.typo .text-button:visited > * {
+    color: var(--color-primary-black-400);
+}
+.theme-dark .full-width-banner.black .text-button:visited,
+.theme-dark .full-width-banner.black .text-button:visited > * {
+    color: var(--color-primary-black-700);
+}
+
+.theme-light .full-width-banner.dark-grey .text-button:hover,
+.theme-light .full-width-banner.dark-grey .text-button:hover > *,
+.theme-light .full-width-banner.cobalt .text-button:hover,
+.theme-light .full-width-banner.cobalt .text-button:hover > *,
+.theme-light .full-width-banner.typo .text-button:hover,
+.theme-light .full-width-banner.typo .text-button:hover > *,
+.theme-light .full-width-banner.black .text-button:hover,
+.theme-light .full-width-banner.black .text-button:hover > * {
+    color: var(--color-primary-black-100);
+}
+
+.theme-dark .full-width-banner.dark-grey .text-button:hover,
+.theme-dark .full-width-banner.dark-grey .text-button:hover > *,
+.theme-dark .full-width-banner.cobalt .text-button:hover,
+.theme-dark .full-width-banner.cobalt .text-button:hover > *,
+.theme-dark .full-width-banner.typo .text-button:hover,
+.theme-dark .full-width-banner.typo .text-button:hover > * {
+    color: var(--color-primary-black-200);
+}
+.theme-dark .full-width-banner.black .text-button:hover,
+.theme-dark .full-width-banner.black .text-button:hover > * {
+    color: var(--color-primary-black-800);
+}
+
+/* endregion */
+
+.full-width-banner.typo .heading {
+    font: var(--font-data-zero);
+}
+
+.full-width-banner.typo .heading,
+.full-width-banner.typo .blurb-and-buttons {
+    flex: 5;
+}
+
+.full-width-banner .blurb-and-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9);
+}
+
+.full-width-banner.dark-grey .blurb-and-buttons .blurb,
+.full-width-banner.cobalt .blurb-and-buttons .blurb,
+.full-width-banner.typo .blurb-and-buttons .blurb,
+.theme-light .full-width-banner.black .blurb-and-buttons .blurb {
+    color: var(--color-grey-200);
+}
+.theme-dark .full-width-banner.black .blurb-and-buttons .blurb {
+    color: var(--color-grey-800);
+}
+
+.full-width-banner.typo .blurb-and-buttons .blurb {
+    padding-top: var(--spacing-5);
+}
+
+.full-width-banner.dark-grey .blurb-and-buttons .blurb a,
+.full-width-banner.cobalt .blurb-and-buttons .blurb a,
+.full-width-banner.typo .blurb-and-buttons .blurb a,
+.theme-light .full-width-banner.black .blurb-and-buttons .blurb a {
+    color: var(--color-grey-50);
+}
+.theme-dark .full-width-banner.black .blurb-and-buttons .blurb a {
+    color: var(--color-grey-1000);
+}
+.full-width-banner.red .blurb-and-buttons .blurb a {
+    color: var(--color-primary-black-900);
+}
+
+.full-width-banner .blurb-and-buttons .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-5);
+}
+.full-width-banner.typo .blurb-and-buttons {
+    gap: var(--spacing-10);
+}
+
+/* Breakpoint M */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .full-width-banner.typo .content-container {
+        padding: var(--spacing-11) var(--spacing-7) 64px;
+    }
+}
+
+/* Breakpoints M and S */
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+    .full-width-banner .banner-contents,
+    .full-width-banner.typo .content-container {
+        flex-direction: column;
+    }
+    .full-width-banner .banner-contents.reversed {
+        flex-direction: column-reverse;
+    }
+
+    .full-width-banner .img-box .img {
+        height: 0;
+        padding-top: calc(9 / 16 * 100%); /* 9:16 aspect ratio */
+    }
+
+    .full-width-banner.typo .blurb-and-buttons .blurb {
+        padding-top: 0;
+    }
+}
+
+/* Breakpoint S */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .full-width-banner.typo .content-container {
+        padding: var(--spacing-11) var(--spacing-7) 56px;
+    }
+
+    .full-width-banner .blurb-and-buttons .buttons {
+        flex-direction: column;
+    }    
+}
